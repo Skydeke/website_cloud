@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <!--  Only shown viewport > 576px-->
+                <li><a href="/docker.html" class="hide-when-small">Docker</a></li>
+                <li><a href="/kubernetis.html" class="hide-when-small">Kubernetes</a></li>
+                <li><a href="/cloudcomputing.html" class="hide-when-small">Cloud Computing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Tech Hub</h1>
+
+        <nav class="!hide-when-small">
+            <ul>
+                <!--  Only shown viewport < 576px-->
+                <li><a href="/docker.html" class="!hide-when-small hide-when-big">Docker</a></li>
+                <li><a href="/kubernetis.html" class="!hide-when-small hide-when-big">Kubernetes</a></li>
+                <li><a href="/cloudcomputing.html" class="!hide-when-small hide-when-big">Cloud Computing</a></li>
+            </ul>
+        </nav>
+
+        <!-- Docker Page -->
+        <section>
+            <h2>Exploring Cloud Computing: Unleashing the Potential of Leading Providers</h2>
+            <p>
+                Cloud computing has transformed the IT landscape, enabling organizations to leverage scalable
+                infrastructure, optimize resource utilization, and accelerate innovation. As businesses embark on their
+                cloud journey, they encounter a wide array of cloud service providers, each offering unique features and
+                capabilities. In this article, we explore the cloud computing landscape, highlighting several prominent
+                providers and showcasing their strengths, while also considering alternative options beyond Microsoft
+                Azure.
+            </p>
+            <h3>Amazon Web Services (AWS): The Pioneer of Cloud Computing</h3>
+            <div class="container">
+                <img src="aws.png" class="fullWidthImage">
+                <p>
+                    When discussing cloud providers, it is impossible to ignore Amazon Web Services (AWS). As the
+                    pioneer of
+                    cloud computing, AWS boasts a comprehensive suite of services that cater to organizations of all
+                    sizes
+                    and industries. From computing power with Amazon EC2 to scalable storage with Amazon S3 and AI
+                    services
+                    like Amazon SageMaker, AWS offers a vast ecosystem to meet diverse business needs.
+
+                    AWS's dominance in the market is due to its early entry and continuous innovation. The provider has
+                    a
+                    proven track record of delivering reliable, secure, and highly scalable solutions that power some of
+                    the
+                    largest enterprises globally. Its extensive network of data centers and global presence ensures
+                    low-latency connectivity and reliable service availability, supporting organizations with a robust
+                    infrastructure backbone.
+                </p>
+            </div>
+
+            <h3>Google Cloud Platform (GCP): Innovating with Cutting-Edge Technologies</h3>
+            <div class="container">
+                <img src="googlecloud.png" class="fullWidthImageLeft">
+                <p>
+                    Google Cloud Platform (GCP) has rapidly emerged as a strong contender in the cloud computing arena.
+                    Leveraging Google's expertise in data management and machine learning, GCP offers a range of
+                    services
+                    tailored for analytics, AI, and data-driven applications. From Google BigQuery for big data
+                    processing
+                    to Google Cloud ML Engine for machine learning, GCP provides a comprehensive suite of tools to
+                    unlock
+                    the potential of data.
+
+                    GCP differentiates itself through its commitment to open-source technologies, such as Kubernetes for
+                    container orchestration and TensorFlow for machine learning. Its emphasis on these community-driven
+                    technologies fosters collaboration and enables organizations to build and deploy cutting-edge
+                    applications with ease.
+                </p>
+            </div>
+            <h3>Alternative Options and Considerations</h3>
+            <p>
+            <h4>Azure</h4>
+            <div class="container">
+                <img src="azure.svg" class="fullWidthImage">
+                <p>
+                    While Microsoft Azure is a prominent cloud provider, it is essential to consider alternative options
+                    that suit specific requirements and preferences. Organizations must evaluate multiple factors when
+                    selecting a cloud provider, such as cost, scalability, security, and ecosystem compatibility.
+                </p>
+            </div>
+
+            <h4> IBM Cloud</h4>
+            <div class="container">
+                <img src="ibm.png" class="fullWidthImageLeft">
+                <p>
+                    Known for its enterprise-grade offerings and legacy in the IT industry, IBM Cloud provides a
+                    range of services, including bare metal servers, virtual servers, and AI-powered solutions. IBM's
+                    focus
+                    on hybrid cloud solutions allows organizations to bridge on-premises and cloud environments
+                    seamlessly.
+                </p>
+            </div>
+
+            <h4>Oracle Cloud Infrastructure (OCI)</h4>
+            <div class="container">
+                <img src="oracle.png" class="fullWidthImage">
+                <p>
+                    Oracle's cloud offering delivers a secure and highly available
+                    infrastructure, emphasizing performance and scalability. With services such as Oracle Autonomous
+                    Database and Oracle Cloud Infrastructure Container Engine for Kubernetes, OCI caters to enterprises
+                    seeking cloud solutions tailored to their business needs.
+                </p>
+            </div>
+            </p>
+            <h3>Conclusion:</h3>
+            <p>
+                The cloud computing landscape offers a multitude of providers, each with their own strengths and
+                capabilities. As organizations embark on their cloud journey, it is vital to consider various factors
+                and evaluate the available options beyond Microsoft Azure. Amazon Web Services, Google Cloud Platform,
+                IBM Cloud, and Oracle Cloud Infrastructure are just a few of the many providers worth exploring, each
+                offering unique features and capabilities that align with specific business requirements. By considering
+                a range of providers, organizations can leverage the power of cloud computing to drive innovation,
+                optimize operations, and achieve their business goals.
+            </p>
+        </section>
+
+    </main>
+</body>
+
+</html>

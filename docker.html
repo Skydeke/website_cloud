@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <!--  Only shown viewport > 576px-->
+                <li><a href="/docker.html" class="hide-when-small">Docker</a></li>
+                <li><a href="/kubernetis.html" class="hide-when-small">Kubernetes</a></li>
+                <li><a href="/cloudcomputing.html" class="hide-when-small">Cloud Computing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Tech Hub</h1>
+
+        <nav class="!hide-when-small">
+            <ul>
+                <!--  Only shown viewport < 576px-->
+                <li><a href="/docker.html" class="!hide-when-small hide-when-big">Docker</a></li>
+                <li><a href="/kubernetis.html" class="!hide-when-small hide-when-big">Kubernetes</a></li>
+                <li><a href="/cloudcomputing.html" class="!hide-when-small hide-when-big">Cloud Computing</a></li>
+            </ul>
+        </nav>
+
+        <!-- Docker Page -->
+        <section>
+            <h2>Docker: Empowering Modern Software Development and Deployment</h2>
+            <div class="container">
+                <img src="Docker.png" class="fullWidthImage">
+                <p>
+                    In the dynamic landscape of software development and deployment, Docker has emerged as a game-changing
+                    technology, revolutionizing the way applications are built, packaged, and deployed. With its lightweight
+                    and portable containers, Docker has become the go-to solution for developers, enabling seamless
+                    collaboration, rapid iteration, and efficient deployment across diverse computing environments. In this
+                    article, we explore the power and impact of Docker, shedding light on how it has transformed the world
+                    of software development.
+                </p>
+            </div>
+
+            <h3>Simplified Software Packaging and Distribution:</h3>
+            <p>
+                Traditionally, software deployment has been plagued by compatibility issues and cumbersome dependencies.
+                Docker solves these challenges by introducing a containerization approach. With Docker, applications and
+                their dependencies are encapsulated within lightweight, self-contained containers. These containers can
+                run consistently across different operating systems and hardware configurations, eliminating the "it
+                works on my machine" dilemma that developers often face.
+
+                The containerization approach not only simplifies packaging and distribution but also enables developers
+                to create application images that are highly portable. Docker images can be easily shared across
+                development teams, allowing for consistent and reproducible environments throughout the software
+                development lifecycle. This standardized packaging ensures that applications run smoothly, irrespective
+                of the underlying infrastructure.
+            </p>
+
+            <h3>Efficient Development and Collaboration:</h3>
+            <p>
+                Docker's containerization technology brings unprecedented efficiency to the development process. By
+                isolating applications and their dependencies, Docker enables developers to work in their preferred
+                development environment without worrying about conflicts or dependencies with other projects.
+
+                Moreover, Docker promotes collaboration by providing a consistent environment for all team members.
+                Developers can share Docker images, ensuring that everyone works with the same application stack. This
+                eliminates the need for time-consuming environment setup and significantly reduces the "it works on my
+                machine" scenarios, streamlining the development workflow and accelerating time-to-market.
+            </p>
+            <h3>Iteration and Continuous Integration:</h3>
+            <p>
+                Docker's lightweight containers enable rapid iteration and experimentation. Developers can quickly spin
+                up multiple containers, each running a different version of the application or specific components,
+                allowing for easy testing and validation. Docker's ability to start containers within seconds
+                facilitates a fast feedback loop, enabling developers to iterate and refine their code more efficiently.
+
+                Additionally, Docker integrates seamlessly with continuous integration and continuous deployment (CI/CD)
+                pipelines. By incorporating Docker images into the CI/CD workflow, organizations can automate the build,
+                test, and deployment processes. This automation ensures consistent and reliable software delivery,
+                enabling teams to deploy updates and new features quickly, reliably, and at scale.
+            </p>
+            <h3>Scalability and Resource Efficiency:</h3>
+            <p>
+                Docker's containerization model inherently promotes scalability and efficient resource utilization. With
+                Docker, applications can be easily scaled horizontally by spinning up multiple instances of containers
+                across a cluster of machines. Docker's orchestration tools, such as Docker Swarm or Kubernetes, further
+                simplify the management and scaling of containerized applications, ensuring high availability and
+                optimal resource allocation.
+
+                Containerization also enables organizations to maximize their infrastructure utilization. Containers are
+                lightweight and share the host system's OS kernel, which means they consume fewer resources compared to
+                traditional virtual machines. This efficiency allows organizations to make the most of their hardware
+                investments and scale applications more cost-effectively.
+            </p>
+            <h3>Conclusion:</h3>
+            <p>
+                Docker has revolutionized the world of software development and deployment, offering a powerful and
+                efficient solution for packaging, distributing, and running applications. By leveraging Docker's
+                containerization technology, organizations can simplify the software development process, improve
+                collaboration, and accelerate time-to-market. Docker's ability to provide consistent environments,
+                facilitate rapid iteration, and enable seamless scalability has made it the go-to solution for modern
+                software development.
+
+                As the technology landscape continues to evolve, Docker's impact is set to grow even further. With its
+                ever-expanding ecosystem and robust community support, Docker remains at the forefront of
+                containerization technologies, empowering developers and organizations to embrace agility, efficiency,
+                and innovation in their software development journey.
+            </p>
+        </section>
+
+    </main>
+</body>
+
+</html>

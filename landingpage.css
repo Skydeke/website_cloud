@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a:hover:before {
+    content: "> ";
+    left: -10px;
+}
+
+.pros {
+    background-color: #b7e1cd;
+    border-radius: 8px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.cons {
+    background-color: #f7c5c0;
+    border-radius: 8px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.pros,
+.cons {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.pros h2,
+.cons h2 {
+    margin-top: 0;
+}
+
+.pros ul,
+.cons ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pros li,
+.cons li {
+    margin: 10px;
+}
+
+.pros h2,
+.cons h2 {
+    margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hide-when-small {
+        display: none;
+    }
+
+    .hide-when-big {
+        display: inline;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .fullWidthImage {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .fullWidthImageLeft {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .pros-cons {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+/* Media Queries */
+@media (min-width: 577px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hide-when-small {
+        display: inline;
+    }
+
+    .hide-when-big {
+        display: none;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    .fullWidthImage {
+        float: right;
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .fullWidthImageLeft {
+        float: left;
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .pros-cons {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+/* Styles for individual pages */
+/* Docker Page */
+section {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
