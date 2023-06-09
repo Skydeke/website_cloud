@@ -126,10 +126,56 @@ nav ul li a:hover:before {
 }
 
 /* Media Queries */
-@media (min-width: 577px) {
+@media (min-width: 577px) and (max-width: 992px) {
     nav ul {
         flex-direction: row;
         align-items: center;
+    }
+
+    .hide-when-small {
+        display: inline;
+    }
+
+    .hide-when-big {
+        display: none;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    .fullWidthImage {
+        float: right;
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .fullWidthImageLeft {
+        float: left;
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .pros-cons {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+        color: chocolate;
     }
 
     .hide-when-small {
